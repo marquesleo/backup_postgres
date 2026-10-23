@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: postgres-backup
+    runtime: docker
+    plan: free
+    healthCheckPath: /healthz
+    envVars:
+      - key: APP_PASSWORD
+        sync: false
+      - key: DATABASE_URL
+        sync: false
+      - key: SESSION_SECRET
+        generateValue: true

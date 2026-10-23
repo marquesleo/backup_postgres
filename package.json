@@ -1,0 +1,12 @@
+{
+  "name": "postgres-backup-online",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Backup de bancos Postgres (Neon) com login, para rodar em um servidor.",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
